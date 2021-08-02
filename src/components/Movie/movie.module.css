@@ -1,0 +1,42 @@
+.movie_card{
+    padding: 20px;
+    width: 22rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    position: relative; 
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgba(51, 51, 51, 0.3);
+}
+
+.movie_card h2 {
+    margin-bottom: -15px;
+}
+.movie_card h3 {
+    margin-bottom: -15px;
+}
+.movie_card span {
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.movie_card img {
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.movie_center {
+    display: grid;
+    justify-content: center;
+}
+
+.backhome {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.backhomeLink {
+    font-size: 26px;
+}
