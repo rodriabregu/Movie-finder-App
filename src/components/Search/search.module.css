@@ -1,79 +1,62 @@
 .sheetgrid {
-    display: grid;
-    gap: 2rem;
-    grid-auto-flow: dense;
-    grid-template-rows: 38rem;
-    grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+  display: grid;
+  gap: 3.5rem;
+  grid-auto-flow: dense;
+  grid-template-rows: 38rem;
+  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
 } 
 
 img {
 -webkit-user-drag: none;
 -moz-user-drag: none;
 -o-user-drag: none;
-}
-img {
 pointer-events: none;
 }
+
 .movie_card{
-padding: 0;
-width: 22rem;
-margin:14px; 
-border-radius: 10px;
-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
-}
-.movie_card_img{
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-height: 30rem;
-}
-.movie_info{
-color: #5e5c5c;
-font-size: 15px;
+  padding: 20px;
+  width: 22rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  position: relative; 
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+  margin: 30px;
+  background-color: rgba(51, 51, 51, 0.3);
+  font-family: 'Montserrat', sans-serif;
 }
 
-.cardtitle{
-width: 80%;
-height: 1rem;
-}
-.play_button{
-background-color: #ff3d49;
-  position: absolute;
-width: 60px;
-height: 60px;
-border-radius: 50%;
-right: 20px;
-bottom: 111px;
-font-size: 27px;
-padding-left: 21px;
-padding-top: 16px;
-color: #FFFFFF;
-cursor: pointer;
+.movie_card img {
+border-radius: 6px;
 }
 
-.credits{
-margin-top: 20px;
-margin-bottom: 20px;
-border-radius: 8px;
-border: 2px solid #8e24aa;
-font-size: 18px;
+.movie_info {
+display: grid;
+color: #444343;
+font-size: 16px;
 }
-.credits .card-body{
-padding: 0;
-}
-.credits p{
-padding-top: 15px;
-padding-left: 18px;
-}
-.credits .card-body i{
-color: #8e24aa;
+
+.movie_info Button {
+margin-top: -34px;
 }
 
 .btnfav {
-    margin-left: 18.5rem;
-    margin-top: 0rem;
-    padding-top: 0rem;
+  margin-left: 18.5rem;
+  margin-top: 0rem;
+  padding-top: 0rem;
 }
 
 .btnfavorite {
-  margin-left: 89px;
+margin-left: 89px;
+}
+
+.inputbutton{
+margin-top:20px;
+margin-left:40vw;
+}
+
+.inputbutton Button {
+margin-left:1vw;
 }

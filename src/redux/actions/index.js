@@ -6,6 +6,7 @@ export const GET_MOVIES_DETAIL = 'GET_MOVIES_DETAIL';
 export const REMOVE_MOVIE_DETAIL = 'REMOVE_MOVIE_DETAIL';
 
 export function addMovieFavorite(payload) {
+    console.log('action',payload)
     return { type: ADD_MOVIE_FAVORITE, payload };
 };
 

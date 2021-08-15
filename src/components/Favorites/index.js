@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink as Link } from 'react-router-dom';
 import { removeMovieFavorite } from '../../redux/actions';
@@ -6,17 +6,18 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { makeStyles } from '@material-ui/core/styles';
 import style from '../Search/search.module.css'
+import './favorites.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
         margin: theme.spacing(1),
+        marginTop: "-4px",
     },
     },
 }));
 
 export const Favorites = () => {
-
     const classes = useStyles();
     const dispatch = useDispatch()
     const movies = useSelector(s => s.moviesFavourites);
@@ -62,18 +63,20 @@ export const Favorites = () => {
                                 <button onClick={() => removeFavorite(movie.imdbID)}>
                                     <div className={classes.root}>
                                         <IconButton aria-label="delete">
-                                        <DeleteIcon />
-                                    </IconButton>
-                                </div>
+                                            <DeleteIcon />
+                                        </IconButton>
+                                    </div>
                                 </button>
                             </div>
                         ))
                 }
                 </ul>
             </div>
+            <div className='backhome'>
             <Link to='/'>
                 Back to home
             </Link>
+            </div>
         </div>
     );
 };

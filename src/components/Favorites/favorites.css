@@ -1,0 +1,9 @@
+.backhome {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    background-color: rgba(192, 190, 190, 0.418);
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
